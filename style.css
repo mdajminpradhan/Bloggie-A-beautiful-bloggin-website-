@@ -1,0 +1,952 @@
+/* loading fonts here */
+
+
+@font-face {
+    font-family: myfont;
+    src: url('fonts/BalooDa2-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: myfontRegular;
+    src: url('fonts/BalooDa2-Regular.ttf');
+}
+
+i {
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: myfont;
+}
+
+p {
+    font-family: myfontRegular;
+}
+
+.post-section p {
+    font-weight: 400;
+}
+
+/* golbal classes starts here */
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+    color: rgba(0,0,0,0.7)
+}
+
+i {
+    cursor: pointer;
+}
+
+.line-pink {
+    background: deepskyblue;
+    height: 9px;
+}
+
+.line-grey {
+    background: rgba(0,0,0,0.15);
+    height: 9px;
+}
+
+.line-white {
+    background: rgb(165, 164, 164);
+    height: 9px;
+}
+
+img, button {
+    transition: .5s !important;
+}
+
+img:hover {
+    transform: scale(1.03) !important;
+}
+
+button:hover {
+    transform: scale(.9) !important;
+    cursor: pointer;
+}
+
+.myline {
+    height: 8px;
+    width: 90%;
+    background: rgba(0,0,0,0.2);
+    position: relative;
+}
+
+.myline span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 8px;
+    width: 50px;
+    background: deepskyblue;
+    z-index: 22;
+}
+/* golbal classes ends here */
+
+
+/* topbar design starts here */
+
+.topbar {
+    background: deepskyblue;
+    color: white;
+}
+
+.topbar .container {
+	align-items: center;
+	margin-top: 15px;
+}
+
+.topbar-grids {
+	display: grid;
+    grid-template-columns: 15% 45% 40%;
+    padding: 0;
+}
+
+.calender, .weather {
+    display: flex;
+}
+
+.calender i, .weather i {
+    margin-right: 10px;
+}
+
+.topbar .menu {
+    justify-self: right;
+}
+
+.topbar .menu ul li {
+	display: inline-block;
+	margin: 0 15px;
+	font-size: 1.1rem;
+}
+
+.topbar .menu ul li a {
+    color: white;
+    font-family: ubuntu;
+
+}
+
+/* .date, .weather, .topmenu {
+    margin-top: 13px;
+}
+
+.date i, .weather i, .topmenu i {
+    margin: 2px 5px 0 0;
+}
+
+.topmenu ul li {
+    display: inline-block;
+    padding: 0 5px;
+    border-left: 1px solid white;
+}
+
+.topmenu ul li:nth-child(4) {
+    border-right: 1px solid white;
+}
+
+.topmenu ul li a {
+    color: white;
+    margin: 5px;
+    text-decoration: none;
+} */
+
+/* topbar design ends here */
+
+/* main header design start here */
+
+.main-header {
+    box-shadow:  0 13px 10px 0 #00000017;
+    padding-top: 20px;
+}
+
+.logo-area {
+    cursor: pointer;
+}
+
+.fa-bars {
+    font-size: 2rem;
+    margin-right: 15px;
+}
+
+.logoa {
+    text-decoration: none !important;
+    color: black
+}
+
+.logo {
+    margin-top: -10px;
+    font-size: 2.1rem;
+}
+
+.main-header-links li {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 0 10px;
+}
+
+.main-header-links li a {
+    font-weight: 800;
+    color: rgb(70, 68, 68);
+    font-size: 18px;
+}
+
+.header-social {
+    padding-top: 2px;
+    padding-right: 0;
+}
+
+.header-social i {
+    color: deepskyblue;
+    margin-left: 10px;
+}
+
+/* main header design ends here */
+
+/* navbar starts here */
+
+nav {
+    background : deepskyblue;
+    width: 230px;
+    height: 100vh;
+    padding-top: 120px;
+    position: absolute;
+    top: 0;
+    left: -1000px;
+    z-index: 3;
+    transition: .5s;
+    color: white;
+
+}
+
+nav li {
+    padding: 10px 0;
+}
+
+nav li a {
+    font-size: 1.2rem;
+    color: white;
+}
+
+nav .close {
+    position: relative;
+    top: -35px;
+    right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 2rem
+}
+
+/* navbar ends here */
+
+/* header post starts here */
+
+
+.first-post {
+    position: relative;
+}
+
+.first-post::after, .side-posts::after {
+    background: linear-gradient(to bottom, #ffffff00, #000000b0);
+    display: block;
+    height: 100%;
+    width: 100%;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.first-post img {
+    width: 100%;
+}
+
+.header-post-title {
+    position: absolute;
+    bottom: 135px;
+    left: 30px;
+    color: white;
+    font-size: 1.6rem;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.post-info {
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    z-index: 2;
+}
+
+.post-category-btn {
+    background: red;
+    border: 0;
+    padding: 0 15px;
+    border-radius: 30px;
+    font-size: .8rem
+}
+
+.header-post-separator {
+    color: white;
+    margin: 5px;
+    margin-left: 30px;
+}
+
+.header-post-date {
+    color: rgba(255, 255, 255, 0.9);
+    margin: 5px;
+    margin-left: 30px;
+}
+
+.header-post-content {
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
+    z-index: 2;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+.side-posts img {
+    height: 169px;
+    width: 700px;
+    position: relative;
+    object-fit: cover;
+}
+
+.side-posts p {
+    font-size: 1.1rem;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 2;
+    color: white;
+}
+
+.sidepost-date {
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 38px;
+    z-index: 2;
+}
+
+.sidepost-date i {
+    margin: 3px 10px 0 0;
+}
+
+/* header post ends here */
+
+/* breaking news design starts here */
+
+.breaking {
+    color: deepskyblue;
+    font-weight: 800;
+}
+
+marquee {
+    color: rgba(0,0,0,0.6);
+    font-size: 1.2rem;
+}
+
+/* breaking news design ends here */
+
+
+/* post area design starts here */
+
+.post-title h4 {
+    word-wrap: break-word;
+    word-break: break-all;
+    font-family: ubuntu;
+}
+
+
+.post-image img {
+    width: 300px;
+    height: 183px;
+}
+
+.post-content {
+    padding-left: 35px;
+    box-sizing: border-box;
+}
+
+
+.blog-post-info button {
+    background: deepskyblue;
+    border: none;
+    padding: 1px 20px;
+    border-radius: 20px;
+    color: white;
+    margin-right: 20px;
+}
+
+.blog-post-info span {
+    color: rgba(0,0,0,0.4)
+}
+
+.post-content p {
+    color: rgba(0,0,0,0.5)
+}
+
+.pagination li {
+    margin: 0 15px; 
+}
+
+.pagination li a {
+    height: 20px;
+    width: 20px;
+    background: deepskyblue;
+    padding: 10px 14px;
+    color: white;
+    border-radius: 20px;
+}
+
+
+/* post area design ends here */
+
+/* sidebar design starts here */
+
+.sidebar img {
+    width: 100%;
+}
+
+.sidebar-post-content p {
+    word-break: break-all;
+}
+
+.sidebar-post-content button {
+    background: deepskyblue;
+    color: white;
+    padding: 0 20px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.sidebar-post-content .sidebar-date {
+    color: rgba(0,0,0,0.4);
+}
+
+.interesting-post-image {
+    position: relative;
+}
+
+.interesting-post-image img {
+    height: 200px;
+    width: 350px;
+    object-fit: cover;
+}
+
+.interesting-post {
+    background: white;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 2;
+    position: relative;
+    bottom: 50px;
+    padding: 40px;
+}
+
+.interesting-post .row:nth-child(2){
+    margin-bottom: 5px;
+}
+
+.interesting-post button {
+    background: deepskyblue;
+    color: white;
+    padding: 0 20px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    margin-right: 25px;
+}
+
+.interesting-post .row:nth-child(3) p {
+    color: rgba(0,0,0,0.4);
+    word-break: break-all;
+}
+
+
+/* sidebar ends here */
+
+/* advise section starts here */
+
+.advise-line {
+    width: 35%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.advise-text {
+    color: rgba(0,0,0,0.4)
+}
+
+.advise-post img {
+    width: 345px;
+    height: 200px;
+}
+
+
+.advise-post button {
+    background: deepskyblue;
+    border: none;
+    padding: 0 10px;
+    color: white;
+    border-radius: 30px;
+}
+
+.advise-post .card-title {
+    word-break: break-all;
+}
+
+
+/* advise section ends here */
+
+/* post page start here */
+
+.post-btn {
+    background: deepskyblue;
+    color: white;
+    padding: 0 15px;
+    border-radius: 20px;
+}
+
+.post-page-date {
+    margin-left: 20px;
+    position: relative;
+    top: 10px;
+    color: rgba(0,0,0,0.4)
+}
+
+/* post page ends here */
+
+/* footer top starts here */
+
+.footer-top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    width: 80%;
+    margin: 80px auto;
+}
+
+.footer-contact {
+    margin-top: 30px;
+}
+
+.place {
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.footer-social i {
+    margin-right: 25px;
+    font-size: 1.6rem;
+}
+
+.f-post {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin: 30px 0;
+}
+
+.f-post .post-image img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.footer-top .post-content p {
+    margin-bottom: 5px;
+    word-break: break-all;
+}
+
+.footer-top .post-content button {
+    border: none;
+    background: deepskyblue;
+    margin: 5px 0;
+    border-radius: 30px;
+    padding: 0 15px;
+}
+
+.footer-contact .place {
+    margin: 30px 0;
+}
+
+.footer-social {
+    margin-top: 40px;
+}
+
+.footer-social i {
+    margin-bottom: 30px;
+    color: deepskyblue;
+    cursor: pointer;
+}
+
+.footer-contact {
+    margin-top: 60px;
+}
+
+.newsletter-form input {
+    display: block;
+    outline: 0;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    width: 100%;
+}
+
+.newsletter-form input[type=submit] {
+    width: 50%;
+    margin: 20px 0;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* footer top ends here */
+
+
+footer {
+    background: black;
+}
+
+
+/* responsive starts here */
+
+@media only screen and (max-width: 1199px) {
+    .side-posts .first-post img {
+        height: 143px;
+    }
+
+    .main-header-links li {
+        padding: 0;
+    }
+
+    .topbar-grids {
+        grid-template-columns: 15% 40% 45%;
+    }
+
+    .topbar .menu ul li {
+        margin: 0 12px;
+    }
+}
+
+
+@media only screen and (max-width: 1066px){
+    .footer-top {
+        grid-template-columns: 50% 50%;
+    }
+
+    .newsletter {
+        display: grid;
+        grid-template-columns: 100% 100%;
+        grid-gap: 50px;
+        margin-top: 50px;
+    }
+
+    .category-section h2 {
+        margin-top: 0;
+    }
+
+    .category-section h2 {
+        margin-top: 0 !important;
+    }
+
+    .categories {
+        grid-gap: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 991px){
+    .main-header .col-md-6 {
+        padding: 0;
+    }
+
+    .main-header-links {
+        padding: 0
+    }
+
+    .main-header-links li {
+        margin: 0 5px;
+    }
+
+    .side-posts .first-post img {
+        height: 106px;
+    }
+
+    .topbar ul li a {
+        margin: 3px;
+    }
+
+    .card {
+        width: 13rem !important;
+    }
+
+    .topbar-grids {
+        grid-template-columns: 15% 20% 65%;
+    }
+
+    .calender, .weather {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .calender i, .weather i {
+        margin-bottom: 10px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 767px){
+    
+        
+    .post-image img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        width: 10rem !important;
+    }
+
+    .myline {
+        width: 100%;
+    }
+
+    .sidebar img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    .sidebar-post-content {
+        width: 94%;
+        margin: 0 auto;
+    }
+
+    .mypagination {
+        margin-bottom: 50px !important;
+        margin-left: 0 !important;
+    }
+
+    .topbar-grids {
+        grid-template-columns: 16% 20% 62%;
+        grid-gap: 10px;
+    }
+
+    .container {
+        max-width: 630px;
+    }
+
+    .topbar .menu ul li {
+        margin: 0 5px;
+    }
+
+    .side-posts .first-post img {
+        height: 180px;
+    }
+}
+
+@media only screen and (max-width: 683px){
+    .topbar-grids {
+        grid-template-columns: 16% 20% 63%;
+        grid-gap: 10px;
+    }
+
+    .subscribe {
+        width: 70% !important;
+    }
+}
+
+@media only screen and (max-width: 660px){
+    .container {
+        max-width: 575px;
+    }
+
+    .topbar {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 640px){
+    .container {
+        max-width: 525px;
+    }
+
+    .main-header-links {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 587px){
+    .footer-top {
+        grid-template-columns: 40% 65%;
+    }
+
+    .subscribe {
+        width: 70% !important;
+    }
+
+    .container {
+        max-width: 465px;
+    }
+
+    .header-post-title {
+        font-size: 1.3rem;
+        bottom: 25%;
+    }
+
+    .header-post-content p {
+        display: none;
+    }
+
+    .post-info {
+        bottom: 10%;
+    }
+}
+
+@media only screen and (max-width: 575px){
+
+    .left-header {
+        width: 35%;
+    }
+
+    .right-header {
+        width: 65%;
+    }
+
+    .main-header-links li {
+        padding: 0 3px;
+    }
+
+    .main-header-links li a {
+        font-size: 15px;
+    }
+
+    .side-posts .first-post img {
+        height: 180px;
+    }
+
+    .post-image img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+
+    .card {
+        width: 21rem !important;
+        margin: 0 auto 20px auto;
+    }
+
+    .header-social {
+        display: none;
+    }
+
+    .main-header {
+        padding: 19px 30px;
+    }
+
+    .topbar {
+        display: none;
+    }
+
+
+}
+
+@media only screen and (max-width: 574px){
+    .footer-top {
+        grid-template-columns: 100%;
+    }
+
+    .subscribe {
+        width: 70% !important;
+    }
+
+    .popular > h2 {
+        margin-top: 50px;
+    }
+
+    .newsletter {
+        grid-template-columns: 100%;
+    }
+
+    .subscribe {
+        width: 40% !important;
+    }
+}
+
+@media only screen and (max-width: 565px){
+    .main-header-links {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 503px){
+    .left-header {
+        width: 100% !important;
+    }
+
+    .container {
+        max-width: 425px;
+    }
+}
+
+
+@media only screen and (max-width: 480px){
+    .container {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 415px){
+    
+    .advise-card {
+        padding-left: 0;
+    }
+
+    .advise h3 {
+        font-size: 1.6rem;
+    }
+
+    .card {
+        width: 18rem !important;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .subscribe {
+        width: 50% !important;
+    }
+
+    .f-post {
+        grid-template-columns: 1fr;
+    }
+
+    .f-post .post-content {
+        padding-left: 0;
+    }
+}
